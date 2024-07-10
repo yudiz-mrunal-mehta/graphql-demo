@@ -21,6 +21,7 @@ export default function Home() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const apolloClient = useApolloClient();
+  console.log('dev test')
   /* useEffect(() => {
     const cachedData = apolloClient.readQuery({ query: GET_FILM });
 
