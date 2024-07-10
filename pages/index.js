@@ -22,6 +22,7 @@ export default function Home() {
   const handleShow = () => setShow(true);
   const apolloClient = useApolloClient();
   console.log('dev test tag name change')
+  console.log('dev test git commit hash build id attempt 2 change')
   /* useEffect(() => {
     const cachedData = apolloClient.readQuery({ query: GET_FILM });
 
