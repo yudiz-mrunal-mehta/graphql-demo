@@ -5,11 +5,9 @@ function getTag() {
     return execSync('git describe --tags --abbrev=0').toString().trim();
   } catch (error) {
     console.error('Failed to get the tag:', error);
-    const timestamp = Date.now();
-    const date = new Date(timestamp);
 
     // Format the date as a human-readable string
-    const readableDate = date.toLocaleString(); // Adjust options as needed
+    const readableDate = new Date().toLocaleString();
 
     return `build-${readableDate}`;
   }
